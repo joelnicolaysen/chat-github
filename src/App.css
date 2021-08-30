@@ -1,0 +1,263 @@
+.header {
+  
+  display: flex;
+  flex-direction: row;
+  background-color: black;
+  padding: 1rem 1rem 1rem 1rem;
+  position: fixed;
+  height: 75px;
+  width: 100%;
+  top: 0;
+  z-index: 2;
+  
+}
+.signOut {
+  
+  right: 0rem;
+}
+
+input {
+  background-color: white;
+  
+  height: 2rem;
+  margin: 1rem 0rem 0.4rem 1rem;
+  border: solid lightgray 0.5px ;
+  min-width: 40.5vw;
+  border-radius: 10px 0px 0px 10px;
+  padding-left: 0.6rem;
+  font-size: 15px;
+  font-family: 'ProximaNova-Regular';
+  position: fixed;
+  bottom: 0px;
+  
+}
+
+.chatButton {
+  height: 2.3rem;
+  width: 6vw;
+  border-radius: 0px 10px 10px 0px;
+  background-color: lightgray;
+  color: black;
+  font-family: 'ProximaNova-Regular';
+  position: fixed;
+  bottom: 0.4rem;
+  border: solid 1px lightgray;
+  right: 26.5%;
+
+}
+
+.chatButton:hover {
+  background-color: rgb(190, 190, 190);
+}
+
+.sendPng {
+  width: 18px;
+}
+
+.myMessage {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-between;
+  border-right: solid 2px darkslateblue;
+  margin: 1rem 1rem 1rem 1rem;
+  padding-right: 1rem;
+}
+.myDisplayName {
+  color: black;
+  margin-right: 1rem;
+  font-size: 20px;
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+
+.myCreatedAt {
+  color: dimgray;
+  margin-top: 8px;
+  margin-bottom: 8px;
+ 
+}
+
+.users {
+  position: fixed;
+  left: 0%;
+  top: 115px;
+  height: 83%;
+  width: 26%;
+  overflow: scroll;
+  border-right: 1px solid lightgray;
+  
+}
+
+.user{
+  height: 70px;
+  width: 100%;
+
+  margin-bottom: 1px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.user:hover {
+  background-color: lightgray;
+}
+
+.user:checked ~ label
+.my-div{background-color:#000}
+
+.user > p{
+  color: black;
+  padding: 1rem;
+  margin: 0rem 0rem 0rem 0rem;
+  font-size: 17px;
+}
+
+.user > img{
+  width: 50px;
+  height: 50px;
+  margin-left: 0.3rem;
+}
+
+
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  text-align: center;
+  position: absolute;
+  width: 300px;
+  top: 45%;
+  
+  
+}
+.button {
+  background-color: black; /* Green */
+  border: none;
+  color: white;
+  border-left: solid white 1px;
+  padding: 32px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  position: fixed;
+  right: 0px;
+  top: 10px;
+  
+}
+
+.message {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-left: solid 2px rgb(206, 204, 218);
+  margin: 1rem 1rem 1rem 1rem;
+  padding-left: 1rem;
+  
+}
+.messageInfo {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.myMessageInfo {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+
+.displayName {
+  color: black;
+  margin-right: 1rem;
+  font-size: 20px;
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+
+.channel{
+  width: 50%;
+  position: fixed;
+  top: 115px;
+  left: 25%;
+  height: 77%;
+  overflow: scroll;
+}
+
+.createdAt {
+  color: dimgray;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  
+}
+
+ul {
+  list-style: none;
+  
+}
+
+p {
+  color: black;
+  font-family: 'ProximaNova-Regular';
+}
+
+.message-p {
+  background-color: rgb(206, 204, 218) ;
+  border-radius: 20px 20px 20px 0px;
+  width: max-content;
+  max-width: 90%;
+  display: inline-block;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  color: black;
+  
+}
+
+.myMessage-p {
+  background-color: darkslateblue ;
+  border-radius: 20px 20px 0px 20px;
+  width: max-content;
+  max-width: 90%;
+  display: inline-block;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  color: white;
+}
+
+@media only screen and (max-width: 700px) {
+  input {
+    min-width: 85%;
+   
+  }
+
+  .channel{
+    width: 100%;
+    height: 77%;
+    position: absolute;
+    left: 0%;
+  }
+  
+
+  img {
+    width: 150px;
+  }
+
+  .chatButton {
+    height: 2.3rem;
+    width: 15vw;
+    border-radius: 0px 10px 10px 0px;
+    background-color: lightgray;
+    color: black;
+    font-family: 'ProximaNova-Regular';
+    position: fixed;
+    bottom: 0.4rem;
+    border: solid 1px lightgray;
+    right: 3%;
+  
+  }
+}
